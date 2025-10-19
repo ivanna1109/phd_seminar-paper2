@@ -1,0 +1,22 @@
+[PUNI MODEL] Učitani svi skupovi podataka.
+
+--- Veličine TF Datasetova (FULL) ---
+
+--- Brojanje labela za Trening (FULL) dataset ---
+Ukupno instanci u Trening (FULL): 2263
+  Labela 0 (Neaktivan): 761 instanci
+  Labela 1 (Selektivan ERa): 779 instanci
+  Labela 2 (Dualna Aktivnost): 723 instanci
+
+--- Brojanje labela za Validacija (FULL) dataset ---
+2025-10-18 19:36:46.180563: I tensorflow/core/framework/local_rendezvous.cc:405] Local rendezvous is aborting with status: OUT_OF_RANGE: End of sequence
+Ukupno instanci u Validacija (FULL): 755
+  Labela 0 (Neaktivan): 254 instanci
+  Labela 1 (Selektivan ERa): 260 instanci
+  Labela 2 (Dualna Aktivnost): 241 instanci
+
+--- Brojanje labela za Test (FULL) dataset ---
+Ukupno instanci u Test (FULL): 755
+  Labela 0 (Neaktivan): 254 instanci
+  Labela 1 (Selektivan ERa): 260 instanci
+  Labela 2 (Dualna Aktivnost): 241 instanci

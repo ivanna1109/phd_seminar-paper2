@@ -1,0 +1,23 @@
+--- Učitavanje TF Datasetova završeno ---
+
+[SAMO GRAFOVI] Učitani svi skupovi podataka.
+
+--- Veličine TF Datasetova (GRAPH ONLY) ---
+
+--- Brojanje labela za Trening (GRAPH ONLY) dataset ---
+Ukupno instanci u Trening (GRAPH ONLY): 2263
+  Labela 0 (Neaktivan): 761 instanci
+  Labela 1 (Selektivan ERa): 779 instanci
+  Labela 2 (Dualna Aktivnost): 723 instanci
+
+--- Brojanje labela za Validacija (GRAPH ONLY) dataset ---
+Ukupno instanci u Validacija (GRAPH ONLY): 755
+  Labela 0 (Neaktivan): 254 instanci
+  Labela 1 (Selektivan ERa): 260 instanci
+  Labela 2 (Dualna Aktivnost): 241 instanci
+
+--- Brojanje labela za Test (GRAPH ONLY) dataset ---
+Ukupno instanci u Test (GRAPH ONLY): 755
+  Labela 0 (Neaktivan): 254 instanci
+  Labela 1 (Selektivan ERa): 260 instanci
+  Labela 2 (Dualna Aktivnost): 241 instanci

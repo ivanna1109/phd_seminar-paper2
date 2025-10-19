@@ -1,0 +1,11 @@
+GCN Multi Training (Graphs Only)..............................................
+
+--- Počinjem učitavanje TF Datasetova iz '/home/ivanam/BIO-Info/bio_info/multi_seminar2/datasets/tfrecords_graph_only' ---
+Učitavam datasete: Uključene Globalne Karakteristike (Dim: 2)
+Svi datasetovi uspešno učitani.
+
+--- Učitavanje TF Datasetova završeno ---
+Veličina trening skupa: 2263
+
+--- Brojanje labela za Training dataset ---
+All files done.

@@ -1,0 +1,30 @@
+Model: "gcn__multi_class"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ gcn_conv (GCNConv)          multiple                  2834      
+                                                                 
+ dropout (Dropout)           multiple                  0         
+                                                                 
+ gcn_conv_1 (GCNConv)        multiple                  47742     
+                                                                 
+ dropout_1 (Dropout)         multiple                  0         
+                                                                 
+ gcn_conv_2 (GCNConv)        multiple                  47742     
+                                                                 
+ global_max_pool (GlobalMax  multiple                  0         
+ Pool)                                                           
+                                                                 
+ dense (Dense)               multiple                  32631     
+                                                                 
+ dropout_2 (Dropout)         multiple                  0         
+                                                                 
+ dense_1 (Dense)             multiple                  30150     
+                                                                 
+ dense_2 (Dense)             multiple                  606       
+                                                                 
+=================================================================
+Total params: 161705 (631.66 KB)
+Trainable params: 161705 (631.66 KB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________

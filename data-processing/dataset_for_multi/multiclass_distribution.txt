@@ -1,0 +1,11 @@
+======================================================================
+ANALIZA RASPODELE NOVIH 3-KLASNIH LABELA
+======================================================================
+Ukupno obrađenih jedinstvenih molekula: 2911
+
+Raspodela po klasi:
+                                  Broj jedinstvenih molekula  Procenat (%)
+0 - Potpuno Neaktivan (Baseline)                        1308         44.93
+1 - Selektivan ERa (ESR1)                               1359         46.68
+2 - Dualna Aktivnost (Oba)                               244          8.38
+======================================================================

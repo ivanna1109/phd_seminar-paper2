@@ -1,0 +1,366 @@
+/var/spool/slurmd/job11678/slurm_script: line 18: module: command not found
+2025-10-18 22:54:50.637068: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-18 22:54:50.663020: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-10-18 22:54:50.663048: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-10-18 22:54:50.663072: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-10-18 22:54:50.668117: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-18 22:54:50.668254: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-18 22:54:51.607578: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[22:54:53] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007FE7EF86279A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007FE7EFDA9449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007FE7ED675B14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdSLNParse.so
+ 8# 0x00007FE7EDBE2384 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdChemReactions.so
+ 9# 0x00007FE7EDBE23D4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdChemReactions.so
+10# 0x00007FE7EDD62804 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdMolChemicalFeatures.so
+11# 0x00007FE7EE799174 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdDepictor.so
+12# 0x00007FE7EEF38CC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+13# 0x00007FE7EEF38D14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+14# 0x00007FE7F5AB6A24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+15# 0x00007FE7EF8ABDC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007FE7EF83D56D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+17# 0x00007FE7EF83D08D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+18# 0x00007FE7EF83CBAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+19# 0x00007FE7EF83C6CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+20# 0x00007FE7EF83C1ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+21# 0x00007FE7EFE68A94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+22# 0x00007FE7EFE68AE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+23# 0x00007FE7EFE68B34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+24# 0x00007FE7EFE68B84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+25# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+26# 0x00007FE7EFDA69B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+27# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# 0x000055AA814AB42D in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# 0x000055AA814C9A1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# 0x000055AA814C5593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x000055AA814DA930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+34# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+35# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+36# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+37# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+38# 0x00007FE854C7F24A in /lib/x86_64-linux-gnu/libc.so.6
+39# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+40# 0x000055AA8149A91D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+2025-10-18 22:54:53.812560: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-10-18 22:54:53.812966: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2211] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+[I 2025-10-18 22:54:55,424] A new study created in memory with name: no-name-30bbddcf-cd2d-4057-9fa7-0b10b6c2996d
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:55:17,462] Trial 0 finished with value: 0.5437901616096497 and parameters: {'hidden_units': 96, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.2674327124165995, 'learning_rate': 0.000736584543290955, 'batch_size': 64}. Best is trial 0 with value: 0.5437901616096497.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:55:59,254] Trial 1 finished with value: 0.5622925162315369 and parameters: {'hidden_units': 32, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.3288160890424019, 'learning_rate': 0.0015914151372394922, 'batch_size': 32}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:56:08,508] Trial 2 finished with value: 0.2242504358291626 and parameters: {'hidden_units': 64, 'dense_units_0': 64, 'dense_units_1': 32, 'dropout_rate': 0.36089845069128584, 'learning_rate': 0.0021918507907216487, 'batch_size': 128}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:56:31,331] Trial 3 finished with value: 0.44552481174468994 and parameters: {'hidden_units': 32, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.3601048458087318, 'learning_rate': 0.0014385229844248203, 'batch_size': 32}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:56:51,981] Trial 4 finished with value: 0.3706876039505005 and parameters: {'hidden_units': 96, 'dense_units_0': 32, 'dense_units_1': 64, 'dropout_rate': 0.2978507009111693, 'learning_rate': 0.0006925249379682409, 'batch_size': 64}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:57:10,662] Trial 5 finished with value: 0.44353458285331726 and parameters: {'hidden_units': 64, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.30090064535796085, 'learning_rate': 0.0012364417345836474, 'batch_size': 64}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:57:32,109] Trial 6 finished with value: 0.29542121291160583 and parameters: {'hidden_units': 32, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.215524125000406, 'learning_rate': 0.0006511206223410458, 'batch_size': 64}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:57:44,650] Trial 7 finished with value: 0.0 and parameters: {'hidden_units': 128, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.32515684398874123, 'learning_rate': 0.002696739163961725, 'batch_size': 128}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:57:55,714] Trial 8 finished with value: 0.4672657251358032 and parameters: {'hidden_units': 96, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.22940394913438156, 'learning_rate': 0.0038210195874880818, 'batch_size': 128}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:58:16,805] Trial 9 finished with value: 0.3635298013687134 and parameters: {'hidden_units': 96, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.2718188234274397, 'learning_rate': 0.0008385984496241656, 'batch_size': 64}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:58:58,576] Trial 10 finished with value: 0.22245067358016968 and parameters: {'hidden_units': 32, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.39491475797834974, 'learning_rate': 0.0045852632119795286, 'batch_size': 32}. Best is trial 1 with value: 0.5622925162315369.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 22:59:40,933] Trial 11 finished with value: 0.6001341342926025 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.2558268261369587, 'learning_rate': 0.0010893309012832582, 'batch_size': 32}. Best is trial 11 with value: 0.6001341342926025.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:01:03,694] Trial 12 finished with value: 0.6345133185386658 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.24958768937977605, 'learning_rate': 0.0010373964225700962, 'batch_size': 32}. Best is trial 12 with value: 0.6345133185386658.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:02:26,623] Trial 13 finished with value: 0.6557104587554932 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.24121723659812994, 'learning_rate': 0.0010606353799954824, 'batch_size': 32}. Best is trial 13 with value: 0.6557104587554932.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:03:49,387] Trial 14 finished with value: 0.6182072162628174 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.23988402330280656, 'learning_rate': 0.0005233564710826948, 'batch_size': 32}. Best is trial 13 with value: 0.6557104587554932.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:05:12,155] Trial 15 finished with value: 0.6109947562217712 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.20139049724133956, 'learning_rate': 0.0009629079526203807, 'batch_size': 32}. Best is trial 13 with value: 0.6557104587554932.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:06:34,917] Trial 16 finished with value: 0.6695279479026794 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2415230439163605, 'learning_rate': 0.0019286423195285357, 'batch_size': 32}. Best is trial 16 with value: 0.6695279479026794.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:07:57,675] Trial 17 finished with value: 0.5870997905731201 and parameters: {'hidden_units': 128, 'dense_units_0': 64, 'dense_units_1': 64, 'dropout_rate': 0.2790038325260949, 'learning_rate': 0.0019877167337373075, 'batch_size': 32}. Best is trial 16 with value: 0.6695279479026794.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:08:40,303] Trial 18 finished with value: 0.6834500432014465 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.22486824493788896, 'learning_rate': 0.002972190256307568, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:10:03,066] Trial 19 finished with value: 0.666023313999176 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2031305336034084, 'learning_rate': 0.0030816824096505874, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:10:12,253] Trial 20 finished with value: 0.40213000774383545 and parameters: {'hidden_units': 64, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.2182283434554147, 'learning_rate': 0.0019969738856781493, 'batch_size': 128}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:11:35,234] Trial 21 finished with value: 0.6320056915283203 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2005260788341186, 'learning_rate': 0.0028970101555083915, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:12:58,000] Trial 22 finished with value: 0.5976899862289429 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2231952921167383, 'learning_rate': 0.003140813073782201, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:14:20,765] Trial 23 finished with value: 0.6063676476478577 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.21026342555225414, 'learning_rate': 0.0036536123828007413, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:15:03,765] Trial 24 finished with value: 0.6661516427993774 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.23657556095385462, 'learning_rate': 0.0023911311204624693, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:15:46,412] Trial 25 finished with value: 0.5944004058837891 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.26188730207179844, 'learning_rate': 0.0023560999359970524, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:17:09,169] Trial 26 finished with value: 0.67307049036026 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.28319075576717134, 'learning_rate': 0.0016462521184822958, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:18:31,922] Trial 27 finished with value: 0.6697075963020325 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.29469902907406453, 'learning_rate': 0.0016669904221421098, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:18:42,957] Trial 28 finished with value: 0.21986527740955353 and parameters: {'hidden_units': 64, 'dense_units_0': 64, 'dense_units_1': 32, 'dropout_rate': 0.2912460801767777, 'learning_rate': 0.001618056828049883, 'batch_size': 128}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:19:18,369] Trial 29 finished with value: 0.549530029296875 and parameters: {'hidden_units': 96, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.31665914319173327, 'learning_rate': 0.0012770713518258615, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:19:43,583] Trial 30 finished with value: 0.6304073333740234 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.34178628381834125, 'learning_rate': 0.004989513662978771, 'batch_size': 64}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:20:26,904] Trial 31 finished with value: 0.6732871532440186 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.28227876256165196, 'learning_rate': 0.0017539448716748453, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:21:49,682] Trial 32 finished with value: 0.5702386498451233 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.2839035654517833, 'learning_rate': 0.0017284256468668758, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:23:12,456] Trial 33 finished with value: 0.6043609380722046 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.308223226005276, 'learning_rate': 0.0013698196000575605, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:23:54,263] Trial 34 finished with value: 0.5808417797088623 and parameters: {'hidden_units': 32, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.26857794338515417, 'learning_rate': 0.0017500934203171356, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:25:17,025] Trial 35 finished with value: 0.19837160408496857 and parameters: {'hidden_units': 128, 'dense_units_0': 32, 'dense_units_1': 32, 'dropout_rate': 0.34455391464444823, 'learning_rate': 0.0014496833124669733, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:25:58,840] Trial 36 finished with value: 0.6018983721733093 and parameters: {'hidden_units': 64, 'dense_units_0': 64, 'dense_units_1': 32, 'dropout_rate': 0.2920212318223563, 'learning_rate': 0.00231897085733015, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:26:40,600] Trial 37 finished with value: 0.5261669754981995 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.3140620986232391, 'learning_rate': 0.001209208115399098, 'batch_size': 64}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:26:51,633] Trial 38 finished with value: 0.18261010944843292 and parameters: {'hidden_units': 32, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.3030154746560522, 'learning_rate': 0.0035224388497917727, 'batch_size': 128}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:27:26,255] Trial 39 finished with value: 0.4473123252391815 and parameters: {'hidden_units': 96, 'dense_units_0': 32, 'dense_units_1': 32, 'dropout_rate': 0.2796618387569875, 'learning_rate': 0.002583955149423039, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:28:09,039] Trial 40 finished with value: 0.6024077534675598 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.3285854967784737, 'learning_rate': 0.0015421983267055967, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:28:51,998] Trial 41 finished with value: 0.6811373233795166 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2571047091995496, 'learning_rate': 0.0020247653658197447, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:30:14,758] Trial 42 finished with value: 0.6387262940406799 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2599194049291753, 'learning_rate': 0.0021128256858339817, 'batch_size': 32}. Best is trial 18 with value: 0.6834500432014465.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:31:37,931] Trial 43 finished with value: 0.6863940358161926 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.27243054654677373, 'learning_rate': 0.001895340844366787, 'batch_size': 32}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:32:19,779] Trial 44 finished with value: 0.54315584897995 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2504474805208733, 'learning_rate': 0.0018641586196710392, 'batch_size': 64}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:33:01,586] Trial 45 finished with value: 0.5368427634239197 and parameters: {'hidden_units': 32, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.26664429523570654, 'learning_rate': 0.002587462214060269, 'batch_size': 32}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:33:12,057] Trial 46 finished with value: 0.0 and parameters: {'hidden_units': 96, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.2754702720027405, 'learning_rate': 0.00220165129756434, 'batch_size': 128}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:33:54,946] Trial 47 finished with value: 0.6484639048576355 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2302691547434509, 'learning_rate': 0.004046296051188246, 'batch_size': 32}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:34:25,518] Trial 48 finished with value: 0.6287088990211487 and parameters: {'hidden_units': 64, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.25139627487371574, 'learning_rate': 0.001495924446526759, 'batch_size': 32}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:35:07,312] Trial 49 finished with value: 0.48155686259269714 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2847222515352103, 'learning_rate': 0.0013053159611368468, 'batch_size': 64}. Best is trial 43 with value: 0.6863940358161926.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:35:50,463] Trial 50 finished with value: 0.6924617290496826 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2722744171930887, 'learning_rate': 0.0028484510505891636, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:36:33,307] Trial 51 finished with value: 0.6247978210449219 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2700531703178729, 'learning_rate': 0.0033282625597631232, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:37:16,123] Trial 52 finished with value: 0.6272058486938477 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.25964901965063725, 'learning_rate': 0.00410515887764333, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:37:58,932] Trial 53 finished with value: 0.6184127926826477 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.28753389859485085, 'learning_rate': 0.002793173983619419, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:38:41,347] Trial 54 finished with value: 0.6038382053375244 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.3998550411493982, 'learning_rate': 0.001832902101153857, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:40:04,104] Trial 55 finished with value: 0.6253561973571777 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.3022737037855617, 'learning_rate': 0.0020676349182825616, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:40:47,267] Trial 56 finished with value: 0.6664273142814636 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2758364635235565, 'learning_rate': 0.002484953881114236, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:42:10,066] Trial 57 finished with value: 0.0 and parameters: {'hidden_units': 128, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.24726596074182938, 'learning_rate': 0.0028907328903204125, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:42:22,961] Trial 58 finished with value: 0.482443243265152 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.23174952102806118, 'learning_rate': 0.002227226644661656, 'batch_size': 128}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:43:04,770] Trial 59 finished with value: 0.4526714086532593 and parameters: {'hidden_units': 32, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.37751165018352706, 'learning_rate': 0.0018520953353484038, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:43:39,839] Trial 60 finished with value: 0.6717140674591064 and parameters: {'hidden_units': 96, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.2652427954672801, 'learning_rate': 0.003247722942762178, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:44:21,638] Trial 61 finished with value: 0.625727117061615 and parameters: {'hidden_units': 96, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.26517236765207697, 'learning_rate': 0.003304970693034911, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:44:56,677] Trial 62 finished with value: 0.5588751435279846 and parameters: {'hidden_units': 96, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.2562248661124326, 'learning_rate': 0.0030276402506695076, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:45:31,646] Trial 63 finished with value: 0.6106751561164856 and parameters: {'hidden_units': 96, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.28071831395145974, 'learning_rate': 0.0043530853056879745, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:46:13,443] Trial 64 finished with value: 0.6151102781295776 and parameters: {'hidden_units': 96, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.27267794404979767, 'learning_rate': 0.0027234002930249827, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:46:55,521] Trial 65 finished with value: 0.5459210276603699 and parameters: {'hidden_units': 128, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.22219734818016124, 'learning_rate': 0.0016189665172913147, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:47:37,322] Trial 66 finished with value: 0.6195603609085083 and parameters: {'hidden_units': 64, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.21125780906364489, 'learning_rate': 0.0037847650376311836, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:49:00,081] Trial 67 finished with value: 0.6891717910766602 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.29765145872387067, 'learning_rate': 0.0011754421328951878, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:49:41,879] Trial 68 finished with value: 0.5592808127403259 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 64, 'dropout_rate': 0.2977858476343279, 'learning_rate': 0.0008436929195067121, 'batch_size': 64}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:50:24,719] Trial 69 finished with value: 0.6422565579414368 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.30996777017622207, 'learning_rate': 0.001156896355164994, 'batch_size': 32}. Best is trial 50 with value: 0.6924617290496826.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:51:07,557] Trial 70 finished with value: 0.7047882676124573 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.24547463805122743, 'learning_rate': 0.0009868190138361483, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:51:50,196] Trial 71 finished with value: 0.6623112559318542 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2429540879798629, 'learning_rate': 0.0009686926033175754, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:52:32,991] Trial 72 finished with value: 0.5225226283073425 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2855689935309521, 'learning_rate': 0.000818920666960001, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:53:16,570] Trial 73 finished with value: 0.6614802479743958 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.23418265014115353, 'learning_rate': 0.0013643760088597914, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:54:39,355] Trial 74 finished with value: 0.6130691170692444 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.25475842558857537, 'learning_rate': 0.001109448073549387, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:55:22,673] Trial 75 finished with value: 0.6410569548606873 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2448567982187314, 'learning_rate': 0.0005949904393687208, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:55:35,408] Trial 76 finished with value: 0.47861337661743164 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.290719347491943, 'learning_rate': 0.0010065651894232506, 'batch_size': 128}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:56:18,579] Trial 77 finished with value: 0.6136956214904785 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.23706777050651598, 'learning_rate': 0.0007419267251075509, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:57:41,346] Trial 78 finished with value: 0.6123905777931213 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.22717944075605387, 'learning_rate': 0.0009169489845548197, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:58:24,406] Trial 79 finished with value: 0.6124715209007263 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.31920761643994927, 'learning_rate': 0.0019532311563548663, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:59:06,765] Trial 80 finished with value: 0.5667141675949097 and parameters: {'hidden_units': 128, 'dense_units_0': 32, 'dense_units_1': 64, 'dropout_rate': 0.27691600572858516, 'learning_rate': 0.0014602443208939385, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-18 23:59:48,566] Trial 81 finished with value: 0.6612450480461121 and parameters: {'hidden_units': 96, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2653105191830176, 'learning_rate': 0.0017430906357390806, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:00:30,344] Trial 82 finished with value: 0.5292876362800598 and parameters: {'hidden_units': 32, 'dense_units_0': 64, 'dense_units_1': 128, 'dropout_rate': 0.2966418957296637, 'learning_rate': 0.0032561102973275727, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:01:12,142] Trial 83 finished with value: 0.6355612874031067 and parameters: {'hidden_units': 64, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.262129936537113, 'learning_rate': 0.0012016431016175703, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:01:55,040] Trial 84 finished with value: 0.6161115765571594 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2709028464002633, 'learning_rate': 0.0035008522222776603, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:02:36,824] Trial 85 finished with value: 0.4126091003417969 and parameters: {'hidden_units': 96, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2820928071169056, 'learning_rate': 0.0015539465916316311, 'batch_size': 64}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:03:19,741] Trial 86 finished with value: 0.6138076186180115 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.25618140608329015, 'learning_rate': 0.0013680095701635619, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:04:42,500] Trial 87 finished with value: 0.6627770066261292 and parameters: {'hidden_units': 128, 'dense_units_0': 64, 'dense_units_1': 32, 'dropout_rate': 0.2518141463801815, 'learning_rate': 0.0020620809032648, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:05:25,193] Trial 88 finished with value: 0.6016269326210022 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.28761980788876207, 'learning_rate': 0.0023670111334865743, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:05:46,468] Trial 89 finished with value: 0.02976190112531185 and parameters: {'hidden_units': 128, 'dense_units_0': 32, 'dense_units_1': 128, 'dropout_rate': 0.30397643842032884, 'learning_rate': 0.0025885465728059213, 'batch_size': 128}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:07:09,232] Trial 90 finished with value: 0.6775748133659363 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.26228182008872236, 'learning_rate': 0.001657176445876758, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:07:51,935] Trial 91 finished with value: 0.6426193118095398 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.27341526295281654, 'learning_rate': 0.0017114500423218233, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:08:34,635] Trial 92 finished with value: 0.683887243270874 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2613731587277559, 'learning_rate': 0.0016540105649392436, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:09:18,645] Trial 93 finished with value: 0.6400122046470642 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2581416900360211, 'learning_rate': 0.0015960075708069611, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:10:01,895] Trial 94 finished with value: 0.6413653492927551 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.28076596711851076, 'learning_rate': 0.0017932763167422168, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:11:24,683] Trial 95 finished with value: 0.6694833636283875 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2697580404098158, 'learning_rate': 0.0016662175616708383, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:12:07,453] Trial 96 finished with value: 0.6566285490989685 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 32, 'dropout_rate': 0.24483220403451386, 'learning_rate': 0.001299099185921812, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:12:50,467] Trial 97 finished with value: 0.6741030216217041 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2390924201460897, 'learning_rate': 0.001990622543178429, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:14:13,240] Trial 98 finished with value: 0.6282752156257629 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.2269390920632158, 'learning_rate': 0.0015127084586467534, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+[I 2025-10-19 00:14:56,186] Trial 99 finished with value: 0.6862826347351074 and parameters: {'hidden_units': 128, 'dense_units_0': 128, 'dense_units_1': 128, 'dropout_rate': 0.23867210360679686, 'learning_rate': 0.0019098416867869184, 'batch_size': 32}. Best is trial 70 with value: 0.7047882676124573.

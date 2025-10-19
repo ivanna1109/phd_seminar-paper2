@@ -1,0 +1,24 @@
+ 1/13 [=>............................] - ETA: 0s - loss: 0.9101 - accuracy: 0.6667 - f1_score: 0.6508 - roc_auc: 0.8147 - average_precision: 0.6916 8/13 [=================>............] - ETA: 0s - loss: 0.7819 - accuracy: 0.7271 - f1_score: 0.7127 - roc_auc: 0.8679 - average_precision: 0.798013/13 [==============================] - 0s 10ms/step - loss: 0.7626 - accuracy: 0.7179 - f1_score: 0.7036 - roc_auc: 0.8737 - average_precision: 0.8114
+Evalucija modela....
+Test Loss: 0.7626
+Test Accuracy: 0.7179
+Test F1Score: 0.7036
+Test ROC AUC: 0.8737
+Test Average Precision: 0.8114
+
+Idemo na classification report....
+
+Dužina y_true_list: 755
+Dužina y_pred_list: 755
+
+              precision    recall  f1-score   support
+
+           0       0.62      0.67      0.64       257
+           1       0.64      0.70      0.67       257
+           2       0.95      0.78      0.86       241
+
+    accuracy                           0.72       755
+   macro avg       0.74      0.72      0.72       755
+weighted avg       0.73      0.72      0.72       755
+
+Sve uspesno zavrseno.

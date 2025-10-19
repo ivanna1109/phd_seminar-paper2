@@ -1,0 +1,134 @@
+GIN OPTUNA Training (GRAPHS+Global Features)..............................................
+
+--- Počinjem učitavanje TF Datasetova iz '/home/ivanam/BIO-Info/bio_info/multi_seminar2/datasets/tfrecords_full' ---
+Učitavam datasete: Uključene Globalne Karakteristike (Dim: 2)
+Svi datasetovi uspešno učitani.
+
+--- Učitavanje TF Datasetova završeno ---
+--------------------------------------------------------
+--------------------------------------------------------
+--------------------------------------------------------
+
+--- Konvertovanje trening skupa ---
+Pretvaranje TF Dataset-a u Spektral Graph objekte i One-Hot enkodiranje labela za 3 klase...
+Automatski određujemo num_features: 12
+
+--- Konvertovanje validacionog skupa ---
+Pretvaranje TF Dataset-a u Spektral Graph objekte i One-Hot enkodiranje labela za 3 klase...
+
+--- Konvertovanje test skupa ---
+Pretvaranje TF Dataset-a u Spektral Graph objekte i One-Hot enkodiranje labela za 3 klase...
+
+Kreiranje dataset instanci na osnovu konvertovanih podataka za Spektral..
+Loaded 2263 graphs for MyDataset
+Loaded 755 graphs for MyDataset
+Loaded 755 graphs for MyDataset
+
+Dimenzije finalnih datasetova:
+Train dataset: 2263 grafova, labeli oblika: (2263, 3)
+Validation dataset: 755 grafova, labeli oblika: (755, 3)
+Test dataset: 755 grafova, labeli oblika: (755, 3)
+Broj labela u train dataset: 2263
+Broj grafova u train datasetu: 2263
+Idemo u objective funkciju...
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+Pisemo history treninga..
+All files done.

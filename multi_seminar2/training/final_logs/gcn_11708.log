@@ -1,0 +1,67 @@
+GCN Multi Training (Graphs + Global Features)..............................................
+
+--- Počinjem učitavanje TF Datasetova iz '/home/ivanam/BIO-Info/bio_info/multi_seminar2/datasets/tfrecords_full' ---
+Učitavam datasete: Uključene Globalne Karakteristike (Dim: 2)
+Svi datasetovi uspešno učitani.
+
+--- Učitavanje TF Datasetova završeno ---
+Veličina trening skupa: 2263
+
+--- Brojanje labela za Training dataset ---
+Ukupno instanci u Training: 2263
+  Labela 0 (Neaktivan): 761 instanci
+  Labela 1 (Selektivan ERa): 779 instanci
+  Labela 2 (Dualna Aktivnost): 723 instanci
+--------------------------------------------------------
+Veličina validacionog skupa: 755
+
+--- Brojanje labela za Val dataset ---
+Ukupno instanci u Val: 755
+  Labela 0 (Neaktivan): 254 instanci
+  Labela 1 (Selektivan ERa): 260 instanci
+  Labela 2 (Dualna Aktivnost): 241 instanci
+--------------------------------------------------------
+Veličina test skupa: 755
+
+--- Brojanje labela za Test dataset ---
+Ukupno instanci u Test: 755
+  Labela 0 (Neaktivan): 254 instanci
+  Labela 1 (Selektivan ERa): 260 instanci
+  Labela 2 (Dualna Aktivnost): 241 instanci
+--------------------------------------------------------
+
+--- Konvertovanje trening skupa ---
+Pretvaranje TF Dataset-a u Spektral Graph objekte i One-Hot enkodiranje labela za 3 klase...
+
+--- Konvertovanje validacionog skupa ---
+Pretvaranje TF Dataset-a u Spektral Graph objekte i One-Hot enkodiranje labela za 3 klase...
+
+--- Konvertovanje test skupa ---
+Pretvaranje TF Dataset-a u Spektral Graph objekte i One-Hot enkodiranje labela za 3 klase...
+Shape za labele: train: (2263, 3), val: (755, 3), test: (755, 3)
+Primer jedne labele: [0. 0. 1.]
+
+Kreiranje dataset instanci na osnovu konvertovanih podataka za Spektral..
+Loaded 2263 graphs for MyDataset
+Loaded 755 graphs for MyDataset
+Loaded 755 graphs for MyDataset
+
+Dimenzije finalnih datasetova:
+Train dataset: 2263 grafova, labeli oblika: (2263, 3)
+Validation dataset: 755 grafova, labeli oblika: (755, 3)
+Test dataset: 755 grafova, labeli oblika: (755, 3)
+Broj labela u train dataset: 2263
+Broj grafova u train datasetu: 2263
+Prelazimo na batch loadere...
+(32, 48, 12)
+(32, 48, 48)
+(32, 3)
+Dimenzije x_batch0: (32, 52, 12)
+Dimenzije x_batch1: (32, 52, 52)
+Dimenzije a_batch: (32, 3)
+Tri skupa prilagodjena za trening, val i test kreirani da bi mogli pustiti u GCN.
+Kreiran GCN model.
+Dodati LR i ES i custom f1 score
+Model kompajliran.
+Start treninga...........................
+All files done.

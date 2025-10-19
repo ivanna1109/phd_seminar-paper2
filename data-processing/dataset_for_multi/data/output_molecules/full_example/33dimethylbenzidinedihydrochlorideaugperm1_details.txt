@@ -1,0 +1,58 @@
+Labela (hitc): 2.0 (Dualna Aktivnost)
+--- Detalji molekula: '33dimethylbenzidinedihydrochloride_aug_perm1' ---
+Naziv molekula (preferredName): 33dimethylbenzidinedihydrochloride_aug_perm1
+Labela (hitc): 2.0
+ESR: unknown
+Broj atoma : 18
+Broj veza: 34
+Globalne karakteristike: [284.08472  69.33474]
+Shape node_features: (18, 12)
+Shape edge_features: (0, 3)
+
+Matrica susedsta (Sparse reprezentacija):
+Adjacency_indices:
+[[ 2  8]
+ [ 8  2]
+ [ 2  1]
+ [ 1  2]
+ [ 2 14]
+ [14  2]
+ [ 8 16]
+ [16  8]
+ [ 8  5]
+ [ 5  8]
+ [16 11]
+ [11 16]
+ [11  0]
+ [ 0 11]
+ [11 10]
+ [10 11]
+ [ 0  4]
+ [ 4  0]
+ [ 0  7]
+ [ 7  0]
+ [ 7  5]
+ [ 5  7]
+ [ 1 17]
+ [17  1]
+ [17 13]
+ [13 17]
+ [17 12]
+ [12 17]
+ [13  3]
+ [ 3 13]
+ [13  6]
+ [ 6 13]
+ [ 6 14]
+ [14  6]]
+Adjacency_values:
+[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+
+Matrica susedstva (Gusta reprezentacija - prvih 5x5 ako je veća):
+[[0. 0. 0. 0. 1.]
+ [0. 0. 1. 0. 0.]
+ [0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0.]
+ [1. 0. 0. 0. 0.]]
+    ... (Prikazano samo prvih 5x5 od 18x18 matrice)
