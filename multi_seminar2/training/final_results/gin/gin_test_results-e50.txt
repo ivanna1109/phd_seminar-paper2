@@ -1,31 +1,0 @@
- 1/12 [=>............................] - ETA: 0s - loss: 0.7763 - accuracy: 0.7031 - f1_score: 0.6939 - roc_auc: 0.8756 - average_precision: 0.8337 6/12 [==============>...............] - ETA: 0s - loss: 0.8237 - accuracy: 0.6875 - f1_score: 0.6665 - roc_auc: 0.8670 - average_precision: 0.797011/12 [==========================>...] - ETA: 0s - loss: 0.8398 - accuracy: 0.6761 - f1_score: 0.6528 - roc_auc: 0.8551 - average_precision: 0.780212/12 [==============================] - 0s 13ms/step - loss: 0.8257 - accuracy: 0.6821 - f1_score: 0.6630 - roc_auc: 0.8622 - average_precision: 0.7879
-Evalucija modela....
-Test Loss: 0.8257
-Test Accuracy: 0.6821
-Test F1Score: 0.6630
-Test ROC AUC: 0.8622
-Test Average Precision: 0.7879
-
-Idemo na classification report....
-
-Dužina y_true_list: 755
-Dužina y_pred_list: 755
-
-              precision    recall  f1-score   support
-
-           0       0.55      0.77      0.64       252
-           1       0.64      0.51      0.57       249
-           2       0.92      0.74      0.82       254
-
-    accuracy                           0.67       755
-   macro avg       0.70      0.67      0.68       755
-weighted avg       0.70      0.67      0.68       755
-
-
---- Matrica Konfuzije (Confusion Matrix) ---
-Predviđena Klasa     Neaktivni (0)  Aktivni na ESR1 (1)  Dualno aktivni (2)
-Stvarna Klasa                                                              
-Neaktivni (0)                  194                   49                   9
-Aktivni na ESR1 (1)            113                  128                   8
-Dualno aktivni (2)              45                   22                 187
-Sve uspesno zavrseno.

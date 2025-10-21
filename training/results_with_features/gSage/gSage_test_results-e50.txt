@@ -1,0 +1,31 @@
+ 1/13 [=>............................] - ETA: 0s - loss: 1.0926 - accuracy: 0.7333 - f1_score: 0.7021 - roc_auc: 0.9045 - average_precision: 0.8524 9/13 [===================>..........] - ETA: 0s - loss: 1.1678 - accuracy: 0.7259 - f1_score: 0.7077 - roc_auc: 0.8771 - average_precision: 0.812213/13 [==============================] - 0s 8ms/step - loss: 1.1620 - accuracy: 0.7285 - f1_score: 0.7096 - roc_auc: 0.8797 - average_precision: 0.8157
+Evalucija modela....
+Test Loss: 1.1620
+Test Accuracy: 0.7285
+Test F1Score: 0.7096
+Test ROC AUC: 0.8797
+Test Average Precision: 0.8157
+
+Idemo na classification report....
+
+Dužina y_true_list: 755
+Dužina y_pred_list: 755
+
+              precision    recall  f1-score   support
+
+           0       0.65      0.73      0.69       254
+           1       0.65      0.74      0.69       260
+           2       0.99      0.71      0.83       241
+
+    accuracy                           0.73       755
+   macro avg       0.76      0.73      0.74       755
+weighted avg       0.76      0.73      0.73       755
+
+
+--- Matrica Konfuzije (Confusion Matrix) ---
+Predviđena Klasa     Neaktivni (0)  Aktivni na ESR1 (1)  Dualno aktivni (2)
+Stvarna Klasa                                                              
+Neaktivni (0)                  186                   66                   2
+Aktivni na ESR1 (1)             67                  193                   0
+Dualno aktivni (2)              31                   39                 171
+Sve uspesno zavrseno.

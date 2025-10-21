@@ -1,0 +1,35 @@
+
+ 1/24 [>.............................] - ETA: 0s - loss: 1.5045 - accuracy: 0.3438 - f1_score: 0.3059 - roc_auc: 0.7085 - average_precision: 0.4211
+10/24 [===========>..................] - ETA: 0s - loss: 1.4483 - accuracy: 0.4313 - f1_score: 0.3466 - roc_auc: 0.7369 - average_precision: 0.4677
+20/24 [========================>.....] - ETA: 0s - loss: 1.4125 - accuracy: 0.4672 - f1_score: 0.3571 - roc_auc: 0.7521 - average_precision: 0.4977
+24/24 [==============================] - 0s 6ms/step - loss: 1.3847 - accuracy: 0.4914 - f1_score: 0.3626 - roc_auc: 0.7656 - average_precision: 0.5216
+Evalucija modela....
+Test Loss: 1.3847
+Test Accuracy: 0.4914
+Test F1Score: 0.3626
+Test ROC AUC: 0.7656
+Test Average Precision: 0.5216
+
+Idemo na classification report....
+
+Dužina y_true_list: 755
+Dužina y_pred_list: 755
+
+              precision    recall  f1-score   support
+
+           0       0.41      0.96      0.57       257
+           1       0.77      0.04      0.07       255
+           2       0.84      0.47      0.60       243
+
+    accuracy                           0.49       755
+   macro avg       0.67      0.49      0.41       755
+weighted avg       0.67      0.49      0.41       755
+
+
+--- Matrica Konfuzije (Confusion Matrix) ---
+Predviđena Klasa     Neaktivni (0)  Aktivni na ESR1 (1)  Dualno aktivni (2)
+Stvarna Klasa                                                              
+Neaktivni (0)                  247                    2                   8
+Aktivni na ESR1 (1)            231                   10                  14
+Dualno aktivni (2)             129                    1                 113
+Sve uspesno zavrseno.

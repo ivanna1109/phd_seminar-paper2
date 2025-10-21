@@ -1,0 +1,31 @@
+ 1/24 [>.............................] - ETA: 0s - loss: 0.6857 - accuracy: 0.6875 - f1_score: 0.5635 - roc_auc: 0.8253 - average_precision: 0.7795 8/24 [=========>....................] - ETA: 0s - loss: 0.7081 - accuracy: 0.6797 - f1_score: 0.6056 - roc_auc: 0.8478 - average_precision: 0.767214/24 [================>.............] - ETA: 0s - loss: 0.7623 - accuracy: 0.6473 - f1_score: 0.5894 - roc_auc: 0.8293 - average_precision: 0.744821/24 [=========================>....] - ETA: 0s - loss: 0.7683 - accuracy: 0.6652 - f1_score: 0.5923 - roc_auc: 0.8303 - average_precision: 0.745824/24 [==============================] - 0s 8ms/step - loss: 0.7527 - accuracy: 0.6768 - f1_score: 0.5935 - roc_auc: 0.8381 - average_precision: 0.7559
+Evalucija modela....
+Test Loss: 0.7527
+Test Accuracy: 0.6768
+Test F1Score: 0.5935
+Test ROC AUC: 0.8381
+Test Average Precision: 0.7559
+
+Idemo na classification report....
+
+Dužina y_true_list: 755
+Dužina y_pred_list: 755
+
+              precision    recall  f1-score   support
+
+           0       0.58      0.71      0.64       254
+           1       0.66      0.62      0.64       260
+           2       0.85      0.70      0.77       241
+
+    accuracy                           0.68       755
+   macro avg       0.70      0.68      0.68       755
+weighted avg       0.69      0.68      0.68       755
+
+
+--- Matrica Konfuzije (Confusion Matrix) ---
+Predviđena Klasa     Neaktivni (0)  Aktivni na ESR1 (1)  Dualno aktivni (2)
+Stvarna Klasa                                                              
+Neaktivni (0)                  180                   58                  16
+Aktivni na ESR1 (1)             84                  162                  14
+Dualno aktivni (2)              45                   27                 169
+Sve uspesno zavrseno.

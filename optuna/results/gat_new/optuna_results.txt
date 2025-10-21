@@ -1,0 +1,8 @@
+Best trial:
+  Value: 0.70961
+  Params: 
+    n_heads: 16
+    units: 32
+    dropout_rate: 0.20448627777803788
+    learning_rate: 0.0038878276783804733
+    batch_size: 32

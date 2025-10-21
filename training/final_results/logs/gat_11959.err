@@ -1,0 +1,71 @@
+/var/spool/slurmd/job11959/slurm_script: line 18: module: command not found
+2025-10-21 04:30:03.948541: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-21 04:30:03.972606: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2025-10-21 04:30:03.972631: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2025-10-21 04:30:03.972649: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-10-21 04:30:03.977180: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-10-21 04:30:03.977340: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-10-21 04:30:04.903768: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[04:30:06] 
+
+****
+Pre-condition Violation
+no owner
+Violation occurred on line 146 in file /home/conda/feedstock_root/build_artifacts/rdkit-meta_1732947292231/work/Code/GraphMol/Atom.h
+Failed Expression: dp_mol
+----------
+Stacktrace:
+ 0# Invar::Invariant::toString[abi:cxx11]() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 1# Invar::operator<<(std::ostream&, Invar::Invariant const&) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libRDKitRDGeneral.so.1
+ 2# RDKit::Atom::getDegree() const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/../../../../libRDKitGraphMol.so.1
+ 3# 0x00007F6A7CFC879A in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+ 4# boost::python::objects::function::call(_object*, _object*) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 5# 0x00007F6A7D60F449 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 6# boost::python::detail::exception_handler::operator()(boost::function_n<void> const&) const in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+ 7# 0x00007F6A7AEC2B14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdSLNParse.so
+ 8# 0x00007F6A7B32F384 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdChemReactions.so
+ 9# 0x00007F6A7B32F3D4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdChemReactions.so
+10# 0x00007F6A7B4AF804 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdMolChemicalFeatures.so
+11# 0x00007F6A7BFF0174 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdDepictor.so
+12# 0x00007F6A7C78FCC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+13# 0x00007F6A7C78FD14 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdmolfiles.so
+14# 0x00007F6A82A42A24 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdCIPLabeler.so
+15# 0x00007F6A7D011DC4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+16# 0x00007F6A7CFA356D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+17# 0x00007F6A7CFA308D in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+18# 0x00007F6A7CFA2BAD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+19# 0x00007F6A7CFA26CD in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+20# 0x00007F6A7CFA21ED in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/Chem/rdchem.so
+21# 0x00007F6A7D6CEA94 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+22# 0x00007F6A7D6CEAE4 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+23# 0x00007F6A7D6CEB34 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+24# 0x00007F6A7D6CEB84 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/rdBase.so
+25# boost::python::handle_exception_impl(boost::function_n<void>) in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+26# 0x00007F6A7D60C9B3 in /home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/rdkit/../../../libboost_python311.so.1.86.0
+27# _PyObject_MakeTpCall in /home/ivanam/.conda/envs/bio_inf/bin/python
+28# _PyEval_EvalFrameDefault in /home/ivanam/.conda/envs/bio_inf/bin/python
+29# 0x0000557CB8DE042D in /home/ivanam/.conda/envs/bio_inf/bin/python
+30# PyEval_EvalCode in /home/ivanam/.conda/envs/bio_inf/bin/python
+31# 0x0000557CB8DFEA1A in /home/ivanam/.conda/envs/bio_inf/bin/python
+32# 0x0000557CB8DFA593 in /home/ivanam/.conda/envs/bio_inf/bin/python
+33# 0x0000557CB8E0F930 in /home/ivanam/.conda/envs/bio_inf/bin/python
+34# _PyRun_SimpleFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+35# _PyRun_AnyFileObject in /home/ivanam/.conda/envs/bio_inf/bin/python
+36# Py_RunMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+37# Py_BytesMain in /home/ivanam/.conda/envs/bio_inf/bin/python
+38# 0x00007F6AE24CA24A in /lib/x86_64-linux-gnu/libc.so.6
+39# __libc_start_main in /lib/x86_64-linux-gnu/libc.so.6
+40# 0x0000557CB8DCF91D in /home/ivanam/.conda/envs/bio_inf/bin/python
+----------
+****
+
+2025-10-21 04:30:07.039545: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:894] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero. See more at https://github.com/torvalds/linux/blob/v6.0/Documentation/ABI/testing/sysfs-bus-pci#L344-L355
+2025-10-21 04:30:07.043240: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2211] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/keras/src/initializers/initializers.py:120: UserWarning: The initializer GlorotUniform is unseeded and being called multiple times, which will return identical values each time (even if the initializer is unseeded). Please update your code to provide a seed to the initializer, or avoid using the same initializer instance more than once.
+  warnings.warn(
+/home/ivanam/.conda/envs/bio_inf/lib/python3.11/site-packages/spektral/data/utils.py:221: UserWarning: you are shuffling a 'MyDataset' object which is not a subclass of 'Sequence'; `shuffle` is not guaranteed to behave correctly. E.g., non-numpy array/tensor objects with view semantics may contain duplicates after shuffling.
+  np.random.shuffle(a)
