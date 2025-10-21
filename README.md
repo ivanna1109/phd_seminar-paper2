@@ -12,21 +12,22 @@ A crucial part of this work is the detailed analysis of the impact of incorporat
 Four key GNN architectures were implemented and evaluated: **GCN, GraphSAGE, GAT, and GIN**. Advanced techniques, including graph isomorphism-based data augmentation and hyperparameter optimization (Optuna), were also employed.
 
 ### Repository Contents
-  * **`data_preprocessing/`** - Contains scripts responsible for **processing raw data** (from CSV files), **(EDA)**, data transformation and visualization, and creating the TFRecords using an **augmentation technique (graph isomorphism)**
-    **`dataset/`** - Original, raw data
-    **`dataset_for_multi/`** - contains files for creating dataset for multi-classification problem
-    **`datasets`** - final TFRecords of data later used in training process for GNNS
-    **`metrics/`** - contains some metrics definition (f1-score, weighted-f1, balanced-accuracy)
-    **`models/`** - definition of every utilized model (gcn, gsage, gat, gin), with global features and without
-    **`optuna/`** - results of optuna hyperparam optimization for every model (cvs files for every set of hyperparam values used in trial, for every model), and final txt file of the best set of hyperparam values
-    **`multi_spektral/`** - contains scripts for converting loaded data into spektral dataset, needed for GNN models
-    **`final_results/`** - contains final training results of every model used on dataset containing global molecular features
-    **`results_with_features/`** - contains final training results of every model used on dataset containing global molecular features
-    **`output_plots_xxxxx/`** - contains final plot results of every model used on dataset with and without global molecular features
-  * **`training/`** - files related to binary classification: ESR1/ESR2
-     *  **`x_train.py`** - files related to diff models training process
-     *  **`hyperparam_x.py`** - files related to optuna optimization for diff models
-     *  **`initial_results/`** - contains initial results gained in initial training process
-     *  **`jobs/`** - Example shell scripts (`.sh`) for submitting batch jobs
-     *  **`xxxx_logs/`** - few output files for job status and monitoring
-  * **`visualize_results.ipynb/`** - file related to plots creation based on results in csv format of every model
+ | :--- | :--- |
+| **`data_preprocessing/`** | Contains all scripts for **raw data processing** (from $\texttt{.csv}$), Exploratory Data Analysis ($\text{EDA}$), data transformation, and creating $\text{TFRecord}$ files using **graph isomorphism augmentation**. |
+| `data_preprocessing/dataset/` | Original, raw data files. |
+| `data_preprocessing/dataset_for_multi/` | Files specifically used for generating the multi-class dataset. |
+| `data_preprocessing/datasets/` | Final $\text{TFRecord}$ files of the processed data used for GNN training. |
+| **`training/`** | Primary directory containing scripts related to model training and hyperparameter optimization. |
+| `training/x_train.py` | Scripts responsible for the training process of the various GNN models. |
+| `training/hyperparam_x.py` | Scripts used for $\text{Optuna}$ hyperparameter optimization runs. |
+| `training/initial_results/` | Contains the initial results obtained during the early stages of the training process. |
+| `training/jobs/` | Example shell scripts ($\texttt{.sh}$) for submitting batch processing jobs. |
+| `training/xxxx_logs/` | Output files containing job status and monitoring logs. |
+| **`models/`** | Python files containing the definition and architecture implementation of every utilized GNN model: **GCN, GraphSAGE, GAT, and GIN** (both with and without global molecular features). |
+| **`multi_spektral/`** | Scripts necessary for converting the loaded molecular data into the **Spektral dataset format**, which is required for GNN model implementation. |
+| **`metrics/`** | Contains definitions for custom evaluation metrics ($\text{F1-score, weighted-F1, balanced-accuracy}$) used in the project. |
+| **`optuna/`** | Results from the $\text{Optuna}$ optimization process, including $\texttt{.csv}$ files for trial records and $\texttt{.txt}$ files detailing the final best hyperparameter set for each model. |
+| **`final_results/`** | Contains the final training and evaluation results for every model used on datasets **without** global molecular features. |
+| **`results_with_features/`** | Contains the final training and evaluation results for every model used on datasets **containing global molecular features**. |
+| **`output_plots_xxxxx/`** | Contains the final plot results (training curves, performance visualizations) for models trained with and without global features. |
+| **`visualize_results.ipynb`** | Jupyter Notebook file dedicated to creating plots and visualizations based on the collected $\texttt{.csv}$ results from all model evaluations. |
