@@ -1,31 +1,0 @@
- 1/24 [>.............................] - ETA: 0s - loss: 1.2518 - accuracy: 0.5312 - f1_score: 0.5063 - roc_auc: 0.8250 - average_precision: 0.6527 9/24 [==========>...................] - ETA: 0s - loss: 1.3502 - accuracy: 0.4757 - f1_score: 0.3735 - roc_auc: 0.7446 - average_precision: 0.554419/24 [======================>.......] - ETA: 0s - loss: 1.2855 - accuracy: 0.5329 - f1_score: 0.4165 - roc_auc: 0.7819 - average_precision: 0.608924/24 [==============================] - 0s 6ms/step - loss: 1.2834 - accuracy: 0.5404 - f1_score: 0.4208 - roc_auc: 0.7778 - average_precision: 0.6070
-Evalucija modela....
-Test Loss: 1.2834
-Test Accuracy: 0.5404
-Test F1Score: 0.4208
-Test ROC AUC: 0.7778
-Test Average Precision: 0.6070
-
-Idemo na classification report....
-
-Dužina y_true_list: 755
-Dužina y_pred_list: 755
-
-              precision    recall  f1-score   support
-
-           0       0.44      0.80      0.56       246
-           1       0.77      0.16      0.26       262
-           2       0.66      0.66      0.66       247
-
-    accuracy                           0.53       755
-   macro avg       0.62      0.54      0.49       755
-weighted avg       0.62      0.53      0.49       755
-
-
---- Matrica Konfuzije (Confusion Matrix) ---
-Predviđena Klasa     Neaktivni (0)  Aktivni na ESR1 (1)  Dualno aktivni (2)
-Stvarna Klasa                                                              
-Neaktivni (0)                  198                    6                  42
-Aktivni na ESR1 (1)            178                   41                  43
-Dualno aktivni (2)              79                    6                 162
-Sve uspesno zavrseno.
